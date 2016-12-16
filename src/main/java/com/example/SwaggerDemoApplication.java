@@ -23,10 +23,10 @@ public class SwaggerDemoApplication {
     @Bean
     public Docket newsApi() {
         return new Docket(DocumentationType.SWAGGER_2)
-                .groupName("hello")
+                .groupName("AMAR")
                 .apiInfo(apiInfo())
                 .select()
-                .paths(regex("/hello.*"))
+                .paths(regex("/api.*"))
                 .build();
     }
 
